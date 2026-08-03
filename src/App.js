@@ -5,10 +5,8 @@ function App() {
   return (
     <div className="App">
 
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      
+      <TodoList />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -34,6 +32,17 @@ function TodoItem() {
       <p>Llorar con la Llorona</p>
       <span>X</span>
     </li>
+  );
+}
+
+function TodoList() {
+  return (
+    <ul>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+    </ul>
   );
 }
 
